@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picsum photos</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Lorem Picsum...</h1>
+    </div>
+    <div class="mainContainer">
+      <div id="leftSideContainer"></div>
+      <div id="rightSideContainer">
+        <div class="filtersContainer">
+          <span>Filters: </span>
+          <div class="filter">
+            <label for="greyscale">Greyscale</label>
+            <input type="checkbox" id="greyscaleFilter" name="greyscale" />
+          </div>
+
+          <div class="filter">
+            <label for="blur">Blur</label>
+            <input
+              type="range"
+              min="1"
+              max="10"
+              value="1"
+              class="slider"
+              id="blurRange"
+              name="blur"
+            />
+          </div>
+        </div>
+
+        <div id="bigPictureContainer">
+          <span class="bigPictureElement">
+            Pick your picture from the left...
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
